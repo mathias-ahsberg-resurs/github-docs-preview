@@ -2,6 +2,12 @@
 name: Github Pages dbt docs
 
 on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
